@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import 'views/splashScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,18 +11,10 @@ class MyApp extends StatelessWidget {
  
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Flutter Sample App'),
-        ),
-        body: Center(
-          child: Text(
-            'This is the sample flutter app',
-            style: TextStyle(fontSize: 20.0),
-          )
-        ),
-      ),
+    return GetMaterialApp(
+      title: 'Food Mobile App UI Design',
+      home: const SplashScreen(),
+
     );
   }
 }
