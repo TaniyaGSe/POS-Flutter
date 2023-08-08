@@ -26,11 +26,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
     // Navigate to the next screen after 5 seconds
     Future.delayed(Duration(seconds: 2), () {
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(
-          builder: (context) => LoginScreen(), 
-        ),
-      );
+      Navigator.of(context).pushNamed('home');
     });
   }
 
