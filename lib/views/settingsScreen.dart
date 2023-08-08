@@ -23,6 +23,32 @@ class _SettingsScreenState extends State<SettingsScreen> {
           title: Text('Settings',style: TextStyle(fontSize: 20.0),),
           
         ),
+        body:Padding(
+          padding: EdgeInsets.all(20.0),
+          child: ListView(
+            scrollDirection: Axis.vertical,
+            children: <Widget> [
+              ListTile(
+                leading: Icon(Icons.brightness_auto),
+                title: Text('Theme'),
+                subtitle: Text('Change the theme into dark mode or light mode'),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.language),
+                title: Text('Language'),
+                subtitle: Text('Change the language'),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.brightness_auto),
+                title: Text('Brightness Auto'),
+                subtitle: Text('Change the brightness'),
+                onTap: () {},
+              )
+            ],
+          ),
+        )
         
       ),
     );
