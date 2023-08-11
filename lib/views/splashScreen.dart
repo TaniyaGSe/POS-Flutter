@@ -26,11 +26,10 @@ class _SplashScreenState extends State<SplashScreen> {
 
     // Navigate to the next screen after 5 seconds
     Future.delayed(Duration(seconds: 2), () {
-      Navigator.of(context).pushNamed('home');
+      Navigator.of(context).pushNamed('login');
     });
   }
 
-  
 
   @override
   Widget build(BuildContext context) {
